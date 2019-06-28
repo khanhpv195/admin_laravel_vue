@@ -2,8 +2,8 @@
 ### Installing
 ```bash
 # Clone the project and run composer
-composer create-project tuandm/laravue
-cd laravue
+
+cd 
 
 # Migration and DB seeder (after changing your DB settings in .env)
 php artisan migrate --seed
