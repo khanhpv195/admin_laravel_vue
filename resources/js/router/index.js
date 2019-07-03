@@ -192,9 +192,17 @@ export const asyncRoutes = [
     ],
   },
   {
-    path: '/pdf/download',
-    component: () => import('@/views/pdf/Download'),
-    hidden: true,
+    path: '/project',
+    component: Layout,
+    meta: { title: 'Project', icon: 'pdf', permissions: ['view menu pdf'] },
+    children: [
+      {
+        path: 'index',
+        component: () => import('@/views/projects/List.vue'),
+        name: 'Project',
+        meta: { title: 'Project' },
+      },
+    ],
   },
   {
     path: '/i18n',

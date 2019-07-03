@@ -139,4 +139,7 @@ Route::group(['middleware' => 'api'], function () {
         return response()->json(new JsonResponse(['pvData' => $data]));
     });
 
+    //project
+
+    Route::get('projects','ProjectController@getAllProject');
 });
